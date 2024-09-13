@@ -26,18 +26,11 @@ import androidx.compose.material.icons.filled.Settings
 @Composable
 fun CustomTopBar(navController: NavController) {
     TopAppBar(
-        navigationIcon = {
-            IconButton(onClick = { /* Otras acciones aquí */ }) {
-                Icon(imageVector = Icons.Rounded.Menu, contentDescription = null)
-            }
-        },
-        title = { Text(text = "Sample Title") },
+        title = { Text(text = "Mi aplicacion lab06") },
         actions = {
-            IconButton(onClick = { /* Acción de búsqueda aquí */ }) {
-                Icon(imageVector = Icons.Rounded.Search, contentDescription = null)
-            }
+
             IconButton(onClick = {
-                navController.navigate("profile") // Asegúrate de que esta línea está presente
+                navController.navigate("profile")
             }) {
                 Icon(
                     imageVector = Icons.Outlined.AccountCircle,
